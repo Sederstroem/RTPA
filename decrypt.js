@@ -11,8 +11,6 @@ var tecken = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "?",
 
 var teckenLength = tecken.length;
 
-//console.log("\nDenna sträng skall dekrypteras: \n" + encryptedString);
-
 // Denna funktion delar upp strängen i en array så att varje tecken blir ett eget element. 
 function stringToArray (stringToSplitUp) {
     var characterArray = stringToSplitUp.split("");
