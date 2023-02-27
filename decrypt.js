@@ -17,7 +17,7 @@ function stringToArray (stringToSplitUp) {
     return characterArray;
 }
 
-// Sparar resultatet i den tidigare deklarerade arrayn på rad 2.
+// Sparar resultatet i den tidigare deklarerade encryptedArray.
 encryptedArray = stringToArray(encryptedString);
 
 // Denna funktion tar bort de fem första och fem sista salttecknen m.h.a en for-loop, 
@@ -33,7 +33,8 @@ function saltRemover (arrayToDesalt) {
 // Uppdaterar arrayn med borttagna saltet. Nu innehåller arrayn endast meddelandet som skall dekrypteras.
 encryptedArray = saltRemover(encryptedArray);
 
-// Dekrypterar varje tecken m.h.a nästlad for-loop, ett tecken i taget, .
+// I denna funktion jämförs ett tecken i taget ur vår array med meddelandet som skall dekrypteras
+// mot tecken-arrayn.
 function decryptArray (arrayToDecrypt, teckenArray, teckenLength) {
     var decryptedArray = [];
     let length = arrayToDecrypt.length;
@@ -70,5 +71,4 @@ function assembleString (arrayToAssemble) {
 
 encryptedString = assembleString(encryptedArray);
 return encryptedString;
-
 }
