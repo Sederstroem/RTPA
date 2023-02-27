@@ -1,0 +1,15 @@
+.div {
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    position: absolute;
+}
+.textarea {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 18px #888888;
+}
+#decryptbutton {
+    padding-bottom: 5px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+}

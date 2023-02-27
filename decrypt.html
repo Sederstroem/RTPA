@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decryption</title>
+    <script type="text/javascript" src="decrypt.js"></script>
+    <link rel="stylesheet" href="decrypt.css" />
+  </head>
+  <body>
+    <div class="div">
+      <div class="div">
+        Enter message to decrypt
+        <textarea
+          class="textarea"
+          id="stringToArray"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <button
+          id="decryptbutton"
+          onclick="document.getElementById('stringToArrayDone').value = decrypt(document.getElementById('stringToArray').value)"
+        >
+          Decrypt message
+        </button>
+        <textarea
+          class="textarea"
+          id="stringToArrayDone"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+    </div>
+  </body>
+</html>
