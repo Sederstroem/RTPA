@@ -72,4 +72,5 @@ function assembleString (arrayToAssemble) {
 
 encryptedString = assembleString(encryptedArray);
 return encryptedString;
+
 }
